@@ -1,0 +1,196 @@
+
+/*%FSM<COMPILE "D:\Program files\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Infected">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"found",3,4346,-375.000000,-250.000000,-275.000000,-200.000000,0.000000,"found"};
+item1[] = {"",7,210,-30.000000,-425.000000,-20.000000,-425.000000,0.000000,""};
+item2[] = {"time2wait",3,250,-625.000000,-250.000000,-525.000000,-200.000000,0.000000,"time2wait"};
+item3[] = {"Init",0,250,-375.000000,-75.000000,-275.000000,-25.000000,0.000000,"Init"};
+item4[] = {"_",8,218,-375.000000,-150.000000,-275.000000,-100.000000,0.000000,""};
+item5[] = {"End",1,250,-375.000000,75.000000,-275.000000,125.000000,0.000000,"End"};
+item6[] = {"not_isserver",4,218,-375.000000,0.000000,-275.000000,50.000000,1.000000,"not isserver"};
+item7[] = {"_",8,218,-500.000000,-300.000000,-400.000000,-250.000000,0.000000,""};
+item8[] = {"wait",4,218,-500.000000,-200.000000,-400.000000,-150.000000,0.000000,"wait"};
+item9[] = {"not_undead",4,218,-75.000000,-250.000000,25.000000,-200.000000,0.000000,"not undead"};
+link0[] = {0,7};
+link1[] = {0,9};
+link2[] = {2,8};
+link3[] = {3,4};
+link4[] = {3,6};
+link5[] = {4,0};
+link6[] = {6,5};
+link7[] = {7,2};
+link8[] = {8,0};
+link9[] = {9,5};
+globals[] = {25.000000,1,0,0,0,640,480,3,132,6316128,1,-565.579834,-146.815536,232.475204,-296.009033,458,578,1};
+window[] = {0,-1,-1,-32000,-32000,978,798,1758,260,1,476};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "Infected";
+  class States
+  {
+    /*%FSM<STATE "found">*/
+    class found
+    {
+      name = "found";
+      init = /*%FSM<STATEINIT""">*/"_victim = (leader _group) findNearestEnemy (leader _group);if (isnull _victim || (leader _group) distance specpen < 300) then {{ if (isplayer _x &&  _x distance (leader _group) < 2900 && _x distance specpen > 300) then {_victim = _x;_target = _x;};} foreach playableunits;};" \n
+       " if (not isnull _victim) then {" \n
+       "	_pos = getposATL _victim;_target = (_this select 1);" \n
+       "	{" \n
+       "		if (alive _x) then {" \n
+       "			_xpos = getposATL _x;" \n
+       "			_x setdamage (damage _x);" \n
+       "			_x setposATL _xpos;if (_victim != _target && random 1 < .2 &&  _x distance (vehicle _victim) < 3.5) then {(vehicle _victim) setdammage (getdammage (vehicle _victim)) + .01;_x moveincargo (vehicle _victim);if (isplayer (vehicle (_victim)))then {(_this select 0) say3d ""z_guts1"";};};" \n
+       "			_xanim = animationstate _x;" \n
+       "			if (_xanim != _attack_anim) then {" \n
+       "				if (_xpos distance _pos > 1) then {" \n
+       "					if (random 1 < 0.2) then {" \n
+       "						_x playMove (_anims select (random floor count _anims));" \n
+       "					};" \n
+       "					_dirto = [_xpos,_pos] call BIS_fnc_dirTo;" \n
+       "					_random = -12 + random 24;" \n
+       "					_x setDir (_dirTo + _random);" \n
+       "				} else {" \n
+       "                                            if ((vehicle _victim) != _victim) then {_x moveincargo (vehicle _victim);_x attachto [vehicle _victim, [0,0,0]];};" \n
+       "					_x playMove _attack_anim;" \n
+       "					[_x,_victim] spawn {" \n
+       "						sleep 0.5;ZAG = (_this select 1);publicvariable ""ZAG"";" \n
+       "						if ((_this select 0) distance (_this select 1) < 1.5) then {   if (isplayer (_this select 1))then {(_this select 0) say3d ""z_guts1""; };         " \n
+       "							[{[ZAG, .2, ""body"", ""stab""] call ace_medical_fnc_addDamageToUnit; 	},""BIS_fnc_spawn"",true,true] call BIS_fnc_MP;" \n
+       "						};" \n
+       "					};" \n
+       "				};" \n
+       "			} else {" \n
+       "				[_x, _xanim] spawn {" \n
+       "					sleep 2;" \n
+       "					if (animationstate (_this select 0) == (_this select 1)) then {" \n
+       "						(_this select 0) switchmove """";" \n
+       "					};" \n
+       "				};" \n
+       "			};" \n
+       "		};" \n
+       "	} foreach (units _group);" \n
+       "} else {" \n
+       "	{" \n
+       "		_xanim = animationstate _x;" \n
+       "		if (_xanim in _all) then {" \n
+       "			_x switchmove """";" \n
+       "		};" \n
+       "	} foreach (units _group);" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "not_undead">*/
+        class not_undead
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"count (units _group) < 1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="time2wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "time2wait">*/
+    class time2wait
+    {
+      name = "time2wait";
+      init = /*%FSM<STATEINIT""">*/"_time2wait = time + random 1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="found";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Init">*/
+    class Init
+    {
+      name = "Init";
+      init = /*%FSM<STATEINIT""">*/"_group = group (_this select 0);_attackerpos = (_this select 1);" \n
+       "_group allowFleeing 0;" \n
+       "" \n
+       "_anims = [""amovpercmrunsnonwnondf"",""amovpercmwlksnonwnondf"",""amovpercmevasnonwnondf"",""amovpercmevasnonwnondf""];" \n
+       "_attack_anim = ""awoppercmstpsgthwnondnon_throw"";" \n
+       "_all = _anims + [_attack_anim];" \n
+       "" \n
+       """AwareFormationSoft"" enableAIFeature false;" \n
+       """CombatFormationSoft"" enableAIFeature false;" \n
+       "" \n
+       "_group setbehaviour ""CARELESS"";" \n
+       "{" \n
+       "	_x setunitpos ""UP"";" \n
+       "	_x setskill 0;" \n
+       "	_x disableAI ""MOVE"";" \n
+       "	_x disableAI ""ANIM"";" \n
+       "	_x disableAI ""AUTOTARGET"";" \n
+       "	_x disableAI ""TARGET"";" \n
+       "} foreach (units _group);"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "not_isserver">*/
+        class not_isserver
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"not isServer"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="found";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Init";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

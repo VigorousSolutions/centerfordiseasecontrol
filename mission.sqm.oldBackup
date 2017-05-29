@@ -1,0 +1,1480 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"A3_Modules_F",
+		"A3_Characters_F_OPFOR",
+		"a3_map_altis",
+		"A3_Characters_F_Gamma",
+		"A3_Characters_F_INDEP",
+		"TB_ALFR_AIR",
+		"rhsusf_c_hmmwv",
+		"rhsusf_vehicles",
+		"A3_Soft_F_MRAP_02",
+		"A3_Structures_F_Mil_BagBunker",
+		"rhsusf_c_weapons",
+		"A3_Soft_F_Truck",
+		"A3_Characters_F_Civil",
+		"dbo_old_bike",
+		"A3_Characters_F_Bootcamp",
+		"A3_Soft_F_SUV",
+		"aia_misc3_config",
+		"uniformblack",
+		"rhsusf_c_troops"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_Bootcamp",
+		"a3_characters_f",
+		"A3_Modules_F",
+		"A3_Characters_F_OPFOR",
+		"A3_Characters_F_BLUFOR",
+		"A3_Characters_F_Gamma",
+		"A3_Characters_F_INDEP",
+		"A3_Characters_F_Civil",
+		"uniformblack",
+		"rhsusf_c_troops",
+		"A3_Soft_F_MRAP_02",
+		"TB_ALFR_AIR",
+		"rhsusf_c_hmmwv",
+		"rhsusf_vehicles",
+		"A3_Structures_F_Mil_BagBunker",
+		"rhsusf_c_weapons",
+		"A3_Soft_F_Truck",
+		"dbo_old_bike",
+		"A3_Soft_F_SUV",
+		"aia_misc3_config",
+		"a3_map_altis"
+	};
+	randomSeed=10058647;
+	class Intel
+	{
+		briefingName="California October 2048 2";
+		overviewText="Cdc Adventure! 31.0";
+		resistanceWest=0;
+		startWeather=0.29999998;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.29999998;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2035;
+		month=6;
+		day=24;
+		hour=19;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=29;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={20573.238,28.854034,8254.6904};
+					azimut=-835.77502;
+					id=0;
+					side="WEST";
+					vehicle="B_Soldier_VR_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="[this,""medic""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+					description="CDC Employee DECON TEAM (Biff) (HQ)";
+				};
+				class Item1
+				{
+					position[]={20564.5,28.925146,8255.2275};
+					azimut=-835.77502;
+					id=1;
+					side="WEST";
+					vehicle="B_Soldier_VR_F";
+					player="PLAYER COMMANDER";
+					skill=0.60000002;
+					init="[this,""medic""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+					description="CDC Employee DECON TEAM (Wally) (HQ)";
+				};
+				class Item2
+				{
+					position[]={20578.908,28.827374,8251.1055};
+					azimut=-835.77502;
+					id=2;
+					side="WEST";
+					vehicle="B_Soldier_VR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this,""medic""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+					description="CDC Employee DECON TEAM (Muhammed) (HQ)";
+				};
+				class Item3
+				{
+					position[]={20570.77,28.872511,8255.8096};
+					azimut=-835.77502;
+					id=3;
+					side="WEST";
+					vehicle="B_Soldier_VR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this,""medic""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+					description="CDC Employee DECON TEAM (Harvey) (HQ)";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={19333.869,67.376518,11214.3};
+					azimut=-508.23044;
+					id=4;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="location1";
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20521.908,27.177664,8689.9014};
+					azimut=-592.15808;
+					id=5;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="location2";
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20574.313,28.82707,8249.9443};
+					azimut=-653.82263;
+					id=6;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="specstart";
+				};
+			};
+		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20562.48,24.964071,8542.627};
+					azimut=-57.454357;
+					id=7;
+					side="EAST";
+					vehicle="O_spotter_F";
+					leader=1;
+					skill=0.60000002;
+					text="man1";
+					init="_id = man1 execFSM ""infected.fsm"";";
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20250.125,53.282597,11674.12};
+					azimut=-508.23001;
+					id=8;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="location3";
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={19978.885,59.822098,11424.88};
+					azimut=-508.23032;
+					id=9;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="location4";
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20380.74,35.452503,8829.2119};
+					azimut=-508.23032;
+					id=10;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="location5";
+				};
+			};
+		};
+		class Item8
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20557.936,24.496456,8568.3926};
+					azimut=-592.15833;
+					id=11;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="location8";
+				};
+			};
+		};
+		class Item9
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20510.328,31.034653,8762.4463};
+					azimut=-592.15833;
+					id=12;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="location9";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={20204.691,53.794331,9039.9131};
+					azimut=-884.49866;
+					id=13;
+					side="WEST";
+					vehicle="B_recon_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="[this,""cdc""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+					description="CDC Employee (Joe)";
+				};
+				class Item1
+				{
+					position[]={20204.854,53.974613,9044.4697};
+					azimut=-884.49866;
+					id=14;
+					side="WEST";
+					vehicle="B_recon_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this,""cdc""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+					description="CDC Employee (Steve)";
+				};
+				class Item2
+				{
+					position[]={20202.492,54.096146,9040.5752};
+					azimut=-884.49866;
+					id=15;
+					side="WEST";
+					vehicle="B_recon_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this,""cdc""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+					description="CDC Employee (Filthy)";
+				};
+				class Item3
+				{
+					position[]={20204.381,53.664188,9036.2314};
+					azimut=-884.49866;
+					id=16;
+					side="WEST";
+					vehicle="B_recon_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this,""cdc""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+					description="CDC Employee (Chuck)";
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20501.225,31.149687,8761.8486};
+					azimut=-793.909;
+					id=17;
+					side="WEST";
+					vehicle="B_recon_F";
+					leader=1;
+					skill=0.60000002;
+					health=0;
+					fuel=0.29407197;
+					description="CDC Employee";
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20487.723,34.252201,8844.335};
+					azimut=-793.909;
+					id=18;
+					side="WEST";
+					vehicle="STKR_BritMTP_AHR";
+					leader=1;
+					skill=0.60000002;
+					health=0;
+					fuel=0.29407197;
+					init="this setdammage 2;";
+					description="CDC Employee";
+				};
+			};
+		};
+		class Item13
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8707.0352,19.828768,7506.874};
+					azimut=-508.23001;
+					id=19;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="specpen";
+				};
+			};
+		};
+		class Item14
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20170.938,57.201347,11499.826};
+					azimut=-508.23001;
+					id=20;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="location12";
+				};
+			};
+		};
+		class Item15
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=5;
+				class Item0
+				{
+					position[]={19763.367,69.025414,8888.1221};
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="1";
+							parentCls="cse_sys_medical";
+							typeName="";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="cse_sys_medical";
+							typeName="";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="cse_sys_medical";
+							typeName="";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="cse_sys_medical";
+							typeName="";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="cse_sys_medical";
+							typeName="";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="cse_sys_medical";
+							typeName="";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="cse_sys_medical";
+							typeName="";
+						};
+						class Item7
+						{
+							value="1";
+							parentCls="cse_sys_medical";
+							typeName="";
+						};
+						class Item8
+						{
+							value="3";
+							parentCls="cse_sys_medical";
+							typeName="";
+						};
+						class Item9
+						{
+							value="5";
+							parentCls="cse_sys_medical";
+							typeName="";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="cse_sys_medical";
+							typeName="";
+						};
+					};
+					id=21;
+					side="LOGIC";
+					vehicle="cse_sys_medical";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={19787.201,70.642693,8906.2021};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="m1,m2";
+							parentCls="cse_assignMedicRoles_CMS";
+							typeName="";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="cse_assignMedicRoles_CMS";
+							typeName="";
+						};
+					};
+					id=22;
+					side="LOGIC";
+					vehicle="cse_assignMedicRoles_CMS";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={19707.484,69.690689,8910.3115};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="1";
+							parentCls="cse_sys_gestures";
+							typeName="";
+						};
+					};
+					id=23;
+					side="LOGIC";
+					vehicle="cse_sys_gestures";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={19723.922,69.246925,8886.4785};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="1";
+							parentCls="cse_sys_backblast";
+							typeName="";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="cse_sys_backblast";
+							typeName="";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="cse_sys_backblast";
+							typeName="";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="cse_sys_backblast";
+							typeName="";
+						};
+					};
+					id=24;
+					side="LOGIC";
+					vehicle="cse_sys_backblast";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item4
+				{
+					position[]={19719.885,70.365517,8921.5117};
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="1";
+							parentCls="cse_sys_equipment";
+							typeName="";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="cse_sys_equipment";
+							typeName="";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="cse_sys_equipment";
+							typeName="";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="cse_sys_equipment";
+							typeName="";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="cse_sys_equipment";
+							typeName="";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="cse_sys_equipment";
+							typeName="";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="cse_sys_equipment";
+							typeName="";
+						};
+						class Item7
+						{
+							value="0";
+							parentCls="cse_sys_equipment";
+							typeName="";
+						};
+					};
+					id=25;
+					side="LOGIC";
+					vehicle="cse_sys_equipment";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item16
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20501.584,62.604744,12432.223};
+					azimut=-508.23001;
+					id=26;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="location15";
+				};
+			};
+		};
+		class Item17
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={21498.541,14.36004,13897.84};
+					azimut=-469.48245;
+					id=27;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={21552.154,13.195289,13889.169};
+					azimut=-469.48251;
+					id=28;
+					side="WEST";
+					vehicle="B_soldier_PG_F";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={21511.348,13.118428,13941.068};
+					azimut=-469.48251;
+					id=29;
+					side="WEST";
+					vehicle="B_soldier_PG_F";
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={21067.26,12.223271,11952.633};
+					expActiv="hint ""Charly team is almost here!  Lets hold out a bit longer!"";";
+					synchronizations[]={1};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					syncId=0;
+				};
+				class Item1
+				{
+					position[]={20270.164,49.006786,11707.82};
+					expActiv="hint ""Charly Team made it, hurry to Dorida!"";";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item18
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={19547.66,33.523495,13369.664};
+					azimut=-508.23001;
+					id=30;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="location16";
+				};
+			};
+		};
+		class Item19
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={19839.416,78.942169,12252.585};
+					azimut=-566.21594;
+					id=31;
+					side="GUER";
+					vehicle="I_officer_F";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={19789.783,87.867508,12277.602};
+					azimut=-566.21594;
+					id=32;
+					side="GUER";
+					vehicle="I_Soldier_GL_F";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={19858.768,78.493042,12280.864};
+					azimut=-566.21594;
+					id=33;
+					side="GUER";
+					vehicle="I_Soldier_GL_F";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={19772.328,92.261055,12268.476};
+					azimut=-566.216;
+					id=34;
+					side="GUER";
+					vehicle="I_Soldier_M_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					description="Rebel Team Sniper";
+				};
+			};
+		};
+		class Item20
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={18818.738,45.783451,14085.45};
+					azimut=-508.23001;
+					id=35;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="location17";
+				};
+			};
+		};
+		class Item21
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={20578.877,28.874926,8258.2383};
+					azimut=-835.77502;
+					id=36;
+					side="WEST";
+					vehicle="B_recon_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="[this,""medic""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+					description="CDC Employee DECON TEAM (Bernard)";
+				};
+				class Item1
+				{
+					position[]={20570.139,28.892542,8258.7754};
+					azimut=-835.77502;
+					id=37;
+					side="WEST";
+					vehicle="B_recon_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this,""medic""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+					description="CDC Employee DECON TEAM (Moggy)";
+				};
+				class Item2
+				{
+					position[]={20584.547,28.846487,8254.6533};
+					azimut=-835.77502;
+					id=38;
+					side="WEST";
+					vehicle="B_recon_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this,""medic""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+					description="CDC Employee DECON TEAM (Buck)";
+				};
+				class Item3
+				{
+					position[]={20576.408,28.882385,8259.3574};
+					azimut=-835.77502;
+					id=39;
+					side="WEST";
+					vehicle="B_recon_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this,""medic""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+					description="CDC Employee DECON TEAM (Gary)";
+				};
+			};
+		};
+		class Item22
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={18344.262,18.088995,14654.081};
+					azimut=-180.40948;
+					id=40;
+					side="EAST";
+					vehicle="O_spotter_F";
+					leader=1;
+					skill=0.60000002;
+					text="man1_1";
+					init="_id = man1 execFSM ""infected.fsm"";";
+				};
+			};
+		};
+		class Item23
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20027.189,79.103127,12018.754};
+					azimut=-457.32199;
+					id=41;
+					side="CIV";
+					vehicle="C_man_1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					description="Mr Jenkins";
+				};
+			};
+		};
+		class Item24
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20253.436,42.710453,8848.9951};
+					azimut=-457.32199;
+					id=42;
+					side="CIV";
+					vehicle="C_man_shorts_1_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					description="Gary Gigax";
+				};
+			};
+		};
+		class Item25
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20584.092,15.731997,10592.496};
+					azimut=-457.32199;
+					id=43;
+					side="CIV";
+					vehicle="C_man_1_3_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					description="Justin Bieber";
+				};
+			};
+		};
+		class Item26
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20133.184,73.653839,11930.425};
+					azimut=-508.23001;
+					id=44;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="location25";
+				};
+			};
+		};
+		class Item27
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={21463.178,1.9967982,11891.421};
+					azimut=-275.138;
+					id=45;
+					side="CIV";
+					vehicle="C_man_shorts_2_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					description="Logan (California Surfers)";
+				};
+				class Item1
+				{
+					position[]={21459.881,2.0383449,11891.671};
+					azimut=-370.58899;
+					id=46;
+					side="CIV";
+					vehicle="C_man_shorts_2_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					description="Disco Dave (California Surfers)";
+				};
+				class Item2
+				{
+					position[]={21461.738,1.9554272,11889.247};
+					azimut=-213.356;
+					id=47;
+					side="CIV";
+					vehicle="C_man_shorts_2_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					description="Kelly Slater (California Surfers)";
+				};
+			};
+		};
+		class Item28
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={21749.223,15.763289,7515.8296};
+					azimut=-695.95648;
+					id=48;
+					side="WEST";
+					vehicle="CORX_Black_AR";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					description="United States Army Drill Sergeant Dan Hicks";
+				};
+				class Item1
+				{
+					position[]={21750.291,15.761172,7515.8198};
+					azimut=-637.63342;
+					id=49;
+					side="WEST";
+					vehicle="CORX_Black_GR";
+					player="PLAY CDG";
+					skill=0.60000002;
+					description="United States Army Private Sticks (AKA Bitchboy)";
+				};
+				class Item2
+				{
+					position[]={21748.037,15.765177,7516.0552};
+					azimut=-695.95648;
+					id=50;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_helipilot";
+					player="PLAY CDG";
+					skill=0.60000002;
+					description="United States Army Warrant Officer Macky (Pilot)";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=14;
+		class Item0
+		{
+			position[]={20573.379,28.728115,8241.5879};
+			azimut=-361.09201;
+			id=51;
+			side="EMPTY";
+			vehicle="O_MRAP_02_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.04988528;
+			text="car1";
+			init="_handle = [this] spawn {sleep 15; _this select 0 setobjecttexture [0, ""textures\vietnam_marines_goon.paa""];};";
+		};
+		class Item1
+		{
+			position[]={19549.031,33.568928,13366.349};
+			azimut=-668.508;
+			id=52;
+			side="EMPTY";
+			vehicle="tb_alfr_ch47";
+			leader=1;
+			skill=0.60000002;
+			health=0.60972911;
+			fuel=0;
+			text="heli";
+		};
+		class Item2
+		{
+			position[]={19285.893,59.543583,12969.331};
+			azimut=-756.22931;
+			id=53;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_d_m2";
+			leader=1;
+			skill=0.60000002;
+			health=0.31193987;
+			fuel=0.65141886;
+			ammo=0.42509925;
+			description="CDC Employee";
+		};
+		class Item3
+		{
+			position[]={20261.242,51.083855,11694.093};
+			azimut=-419.63187;
+			id=54;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Large_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={20282.691,47.461388,11728.79};
+			azimut=-419.63187;
+			id=55;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Large_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={20272.893,48.634632,11712.464};
+			azimut=-419.20221;
+			id=56;
+			side="EMPTY";
+			vehicle="rhsusf_weapons_crate";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={20506.23,34.159279,8858.1455};
+			azimut=-303.08301;
+			id=57;
+			side="EMPTY";
+			vehicle="B_G_Van_01_transport_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.04988528;
+			text="car1_3";
+			init="clearmagazinecargo this;";
+		};
+		class Item7
+		{
+			position[]={20158.072,41.823601,11722.915};
+			azimut=-457.32199;
+			id=58;
+			side="EMPTY";
+			vehicle="dbo_CIV_ol_bike";
+			leader=1;
+			skill=0.60000002;
+			description="Mr Jenkins";
+		};
+		class Item8
+		{
+			position[]={20554.371,34.404591,8877.5313};
+			azimut=-457.32199;
+			id=59;
+			side="EMPTY";
+			vehicle="dbo_CIV_ol_bike";
+			leader=1;
+			skill=0.60000002;
+			description="Mr Jenkins";
+		};
+		class Item9
+		{
+			position[]={20487.174,34.596931,8856.7305};
+			azimut=-409.52377;
+			id=60;
+			side="EMPTY";
+			vehicle="dbo_CIV_ol_bike";
+			leader=1;
+			skill=0.60000002;
+			description="Mr Jenkins";
+		};
+		class Item10
+		{
+			position[]={20570.887,35.855625,8911.2217};
+			azimut=-409.52377;
+			id=61;
+			side="EMPTY";
+			vehicle="dbo_CIV_ol_bike";
+			leader=1;
+			skill=0.60000002;
+			description="Mr Jenkins";
+		};
+		class Item11
+		{
+			position[]={21449.086,2.1159422,11887.251};
+			azimut=-463.71399;
+			id=62;
+			side="EMPTY";
+			vehicle="C_SUV_01_F";
+			skill=0.60000002;
+			health=0.91347349;
+			fuel=0.63950753;
+			description="Disco Dave (California Surfers)";
+		};
+		class Item12
+		{
+			position[]={21470.662,1.9415942,11888.708};
+			azimut=-463.71399;
+			id=63;
+			side="EMPTY";
+			vehicle="Land_Campfire_burning";
+			skill=0.60000002;
+			description="Disco Dave (California Surfers)";
+		};
+		class Item13
+		{
+			position[]={21736.893,15.623861,7524.4502};
+			azimut=-235.95322;
+			id=64;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_m2";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="United States Army Warrant Officer Macky (Pilot)";
+		};
+	};
+	class Markers
+	{
+		items=2;
+		class Item0
+		{
+			position[]={20571.689,28.674679,8416.0254};
+			name="f";
+			type="mil_arrow";
+			colorName="ColorRed";
+			angle=-1.1796527;
+		};
+		class Item1
+		{
+			position[]={8748.4775,23.712963,7500.9082};
+			name="respawn_west";
+			type="Empty";
+		};
+	};
+	class Sensors
+	{
+		items=9;
+		class Item0
+		{
+			position[]={20529.32,25.981413,8650.2549};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="hint ""It looks like this town has been taken over by the disease.  We should continue north to Chalkeia the old annexed base and see if we can re establish communications with homecamp."";";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={20576.125,28.674992,8424.5381};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="hint ""Looks like something is happening in that town.  We better go check it out..."";";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={20564.271,43.5186,9846.9512};
+			a=2111;
+			b=25;
+			rectangular=1;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="_handle = [location4, 35, location4] spawn gooncorp_spawnai;";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={20507.443,49.267281,9597.9863};
+			a=2111;
+			b=25;
+			rectangular=1;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="_handle = [location12, 12, location12] spawn gooncorp_spawnai;";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={20406.756,51.789089,9299.3438};
+			a=2000;
+			rectangular=1;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="hint ""The base in Chalkea will have some extra vehicles and ammunition we can use.  Also it would be nice to see charlie team again."";";
+			class Effects
+			{
+				track="ATrack1";
+			};
+		};
+		class Item5
+		{
+			position[]={20571.697,28.411633,8320.499};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+				track="LeadTrack04a_F";
+			};
+		};
+		class Item6
+		{
+			position[]={20245.088,52.936668,11677.224};
+			a=121;
+			b=121;
+			rectangular=1;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="_handle = [] spawn {_handle = [location15, 85, location4] spawn gooncorp_spawnai;hint ""Radio: Team bravo this is HQ, it looks like everyone in Chalkia is dead!  Team Charly is nearby, they are making their way to you now.  Meet up with them and try to kill any infected you see in the area!""; sleep 300; hint ""Ok, it looks like its clear.  Wait for charly team to arrive."";sleep 45; _handle = [location16, 85, location16] spawn gooncorp_spawnai;};";
+			class Effects
+			{
+				track="LeadTrack05_F";
+			};
+			synchronizations[]={0};
+			syncId=1;
+		};
+		class Item7
+		{
+			position[]={19549.244,33.589558,13365.443};
+			a=21;
+			b=21;
+			rectangular=1;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="  _handle = [] spawn {  hint ""It looks like the area is all clear, for now, this helicopter is damaged!  Lets start the repairs now, it should take about 15 minutes..."";  _handle = [location17, 65, location16] spawn gooncorp_spawnai;sleep 300;  _handle = [location17, 65, location16] spawn gooncorp_spawnai;sleep 200;  _handle = [location17, 75, location16] spawn gooncorp_spawnai;sleep 400;  _handle = [location17, 85, location16] spawn gooncorp_spawnai;  sleep 260;  heli setfuel 1;  heli setdammage 0;  hint ""Helicopter repaired, lets fly to safety to the south!  Lets leave this island!"";};";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={17132.584,-0.0031855714,1243.9215};
+			a=21111;
+			b=51;
+			rectangular=1;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="[{_handle = [""end3""] spawn gooncorp_warriorending_win;},""BIS_fnc_spawn"",true,true] call BIS_fnc_MP; ";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=13493532;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=1633496;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=15641433;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};

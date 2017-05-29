@@ -1,0 +1,5090 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=438;
+	};
+	class MarkerIDProvider
+	{
+		nextID=2;
+	};
+	class Camera
+	{
+		pos[]={17416.752,30.816181,13183.412};
+		dir[]={-0.058637638,-0.2654323,-0.96246731};
+		up[]={-0.016145317,0.96407008,-0.26502261};
+		aside[]={-0.99827963,1.7239672e-006,0.060815237};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F",
+	"TB_ALFR_AIR",
+	"rhsusf_vehicles",
+	"dbo_old_bike",
+	"A3_Soft_F_Gamma_SUV_01",
+	"CUP_Misc3_Config",
+	"A3_Characters_F",
+	"ace_nouniformrestrictions",
+	"A3_Modules_F",
+	"UniformBlack",
+	"rhsusf_c_troops",
+	"A3_Structures_F_Civ_Camping",
+	"ace_medical",
+	"A3_Weapons_F",
+	"CUP_CAMisc",
+	"CUP_CAMP_Armory_Misc_Laptop",
+	"acex_sitting",
+	"A3_Structures_F_Heli_Furniture",
+	"A3_Structures_F_Civ_InfoBoards",
+	"rhs_c_troops",
+	"A3_Soft_F_Gamma_Truck_01",
+	"ace_realisticnames",
+	"ace_cargo",
+	"A3_Structures_F_Heli_Civ_Accessories",
+	"A3_Structures_F_Heli_Items_Electronics",
+	"plp_containers",
+	"A3_Structures_F_EPC_Civ_Accessories",
+	"CUP_Editor_Structures_Config",
+	"A3_Structures_F_Heli_Ind_Machines",
+	"A3_Soft_F_Gamma_Van_01",
+	"A3_Structures_F_EPA_Items_Food",
+	"A3_Structures_F_Items_Food",
+	"A3_Data_F_Curator_Intel",
+	"A3_Soft_F_Quadbike_01",
+	"ace_repair",
+	"UK3CB_BAF_Equipment_Backpacks",
+	"PRA3_Misc_Misc_Ruins",
+	"A3_Air_F_Heli_Heli_Transport_04",
+	"cba_xeh",
+	"A3_Structures_F_EPC_Civ_InfoBoards"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=30;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="TB_ALFR_AIR";
+			name="TB_ALFR_AIR";
+			author="ALFR Mod";
+		};
+		class Item2
+		{
+			className="rhsusf_vehicles";
+			name="rhsusf_vehicles";
+		};
+		class Item3
+		{
+			className="dbo_old_bike";
+			name="dbo_old_bike";
+		};
+		class Item4
+		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item5
+		{
+			className="CUP_Misc3_Config";
+			name="CUP_Misc3_Config";
+		};
+		class Item6
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="ace_nouniformrestrictions";
+			name="ACE3 - No Uniform Restrictions";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item8
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item9
+		{
+			className="UniformBlack";
+			name="UniformBlack";
+		};
+		class Item10
+		{
+			className="rhsusf_c_troops";
+			name="RHSUSF Infantry & Equipment";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item11
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item12
+		{
+			className="ace_medical";
+			name="ACE3 - Medical";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item13
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item14
+		{
+			className="CUP_CAMisc";
+			name="CUP_CAMisc";
+		};
+		class Item15
+		{
+			className="CUP_CAMP_Armory_Misc_Laptop";
+			name="CUP_CAMP_Armory_Misc_Laptop";
+		};
+		class Item16
+		{
+			className="acex_sitting";
+			name="ACEX - Sitting";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item17
+		{
+			className="A3_Structures_F_Heli";
+			name="Arma 3 Helicopters - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item18
+		{
+			className="rhs_c_troops";
+			name="AFRF Infantry & Equipment";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item19
+		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item20
+		{
+			className="plp_containers";
+			name="plp_containers";
+		};
+		class Item21
+		{
+			className="A3_Structures_F_EPC";
+			name="Arma 3 Win Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item22
+		{
+			className="CUP_Editor_Structures_Config";
+			name="CUP_Editor_Structures_Config";
+		};
+		class Item23
+		{
+			className="A3_Structures_F_EPA";
+			name="Arma 3 Survive Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item24
+		{
+			className="A3_Data_F_Curator";
+			name="Arma 3 Zeus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item25
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item26
+		{
+			className="ace_repair";
+			name="ACE3 - Repair";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item27
+		{
+			className="UK3CB_BAF_Equipment_Backpacks";
+			name="3CB BAF Equipment - Backpacks";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
+		class Item28
+		{
+			className="PRA3_Misc_Misc_Ruins";
+			name="PRA3_Misc_Misc_Ruins";
+		};
+		class Item29
+		{
+			className="A3_Air_F_Heli";
+			name="Arma 3 Helicopters - Aircrafts";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=14835641;
+class ScenarioData
+{
+	author="Goon";
+	class Header
+	{
+		gameType="RPG";
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
+class Intro
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="COTVT18 The Strain  V10.9l";
+		overviewText="Virtual Adventure Simulator 2048";
+		resistanceWest=0;
+		startWeather=0.46187738;
+		startFog=0.35005015;
+		startWind=0.48305666;
+		startRain=0.25432056;
+		startWaves=0.099999994;
+		startGust=0.24161302;
+		forecastWeather=0.29999998;
+		forecastFog=0.34588492;
+		forecastWind=0.80921727;
+		forecastWaves=0.099999994;
+		forecastRain=0.26279214;
+		forecastLightnings=0.099999994;
+		forecastGust=0.77109462;
+		rainForced=1;
+		windForced=1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=20;
+		minute=-20;
+		startFogDecay=0.011679435;
+		forecastFogDecay=0.013;
+	};
+	class Entities
+	{
+		items=115;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={18121.367,16.89789,14852.287};
+			name="f";
+			type="mil_arrow";
+			colorName="ColorRed";
+			angle=358.82013;
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={8474.7129,89.331749,25251.766};
+			name="respawn_west";
+			type="Empty";
+			id=1;
+		};
+		class Item2
+		{
+			dataType="Trigger";
+			position[]={18175.877,26.200363,15237.635};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{hint ""It looks like this town has been taken over by the disease.  We should continue SouthEast to Dorida the old annexed base and see if we can re establish communications with homecamp."";_handle = [locationCHARKIA, 35, locationCHARKIA] spawn gooncorp_spawnai_z;}";
+				interuptable=1;
+				activationBy="WEST";
+				effectMusic="LeadTrack01_F";
+			};
+			id=2;
+			type="EmptyDetector";
+		};
+		class Item3
+		{
+			dataType="Trigger";
+			position[]={18127.02,16.795156,14864.89};
+			class Attributes
+			{
+				onActivation="hint ""Looks like something is happening in that town.  We better go check it out..."";";
+				interuptable=1;
+				activationBy="WEST";
+			};
+			id=3;
+			type="EmptyDetector";
+		};
+		class Item4
+		{
+			dataType="Trigger";
+			position[]={16817.094,23.985586,12651.447};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{_handle = [] spawn {_handle = [locationPYRGOS, 35, locationPYRGOS] spawn gooncorp_spawnai_z;sleep 40;_handle = [location15, 85, location3] spawn gooncorp_spawnai_z;sleep 20; hint ""Radio: Team bravo this is HQ, it looks like everyone in Pyrgo is dead!  Search that town for survivors, then try to make your way NorthEast to Charkia.  There is a team there with a helicopter.""; sleep 300; hint ""Get to that town, Charkia!"";sleep 45; _handle = [location16, 35, location16] spawn gooncorp_spawnai_z;};}";
+				sizeA=121;
+				sizeB=121;
+				interuptable=1;
+				activationBy="WEST";
+				isRectangle=1;
+				effectMusic="BackgroundTrack01_F";
+			};
+			id=8;
+			type="EmptyDetector";
+		};
+		class Item5
+		{
+			dataType="Trigger";
+			position[]={19549.297,33.586868,13365.443};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{  _handle = [] spawn {  hint ""It looks like the area is all clear, for now, this helicopter is damaged!  Lets start the repairs now, it should take about 15 minutes..."";  _handle = [location17, 55, location16] spawn gooncorp_spawnai_z;sleep 300;  _handle = [location17, 35, location16] spawn gooncorp_spawnai_z;sleep 200;  _handle = [location17, 75, location16] spawn gooncorp_spawnai_z;sleep 200;  _handle = [location17, 45, location16] spawn gooncorp_spawnai_z;  sleep 260;  heli setfuel 1;  heli setdammage 0;  hint ""Helicopter repaired, lets fly to safety to kavala to meet up with delta and command."";};}";
+				sizeA=21;
+				sizeB=21;
+				interuptable=1;
+				activationBy="WEST";
+				isRectangle=1;
+				effectMusic="ATrack7";
+			};
+			id=9;
+			type="EmptyDetector";
+		};
+		class Item6
+		{
+			dataType="Trigger";
+			position[]={15155.559,0,3731.2903};
+			angle=0.046840873;
+			class Attributes
+			{
+				onActivation="[{_handle = [""end3""] spawn gooncorp_warriorending_win;},""BIS_fnc_spawn"",true,true] call BIS_fnc_MP; ";
+				sizeA=21111;
+				sizeB=51;
+				interuptable=1;
+				activationBy="WEST";
+				isRectangle=1;
+			};
+			id=10;
+			type="EmptyDetector";
+			atlOffset=182.37054;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={19549.234,37.576565,13366.508};
+				angles[]={0.034652505,0.89870548,6.2325621};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				health=0.60972911;
+				skill=0.60000002;
+				fuel=0;
+				name="heli";
+			};
+			id=12;
+			type="tb_alfr_ch47";
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={19285.725,61.736626,12969.592};
+				angles[]={0.107583,5.6508651,0.079829417};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				health=0.31193987;
+				skill=0.60000002;
+				ammo=0.42509925;
+				fuel=0.65141886;
+				description="CDC Employee";
+			};
+			id=13;
+			type="rhsusf_m1025_d_m2";
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18126.795,26.449755,15258.988};
+				angles[]={6.2232571,4.5845966,0.045302324};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				description="Mr Jenkins";
+			};
+			id=19;
+			type="dbo_CIV_ol_bike";
+			atlOffset=-0.0008430481;
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18059.645,26.664484,15238.235};
+				angles[]={6.1954122,5.4188328,6.1493235};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				description="Mr Jenkins";
+			};
+			id=20;
+			type="dbo_CIV_ol_bike";
+			atlOffset=-0.0035648346;
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18143.25,27.896179,15292.697};
+				angles[]={6.2458706,5.4188328,0.0066682254};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				description="Mr Jenkins";
+			};
+			id=21;
+			type="dbo_CIV_ol_bike";
+			atlOffset=-0.00011253357;
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17032.018,4.279603,13472.792};
+				angles[]={0.030658109,4.4730349,0.081154868};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				health=0.91347349;
+				skill=0.60000002;
+				fuel=0.63950753;
+				description="Disco Dave (California Surfers)";
+			};
+			id=22;
+			type="C_SUV_01_F";
+			atlOffset=-0.0079751015;
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17053.566,3.3775661,13474.233};
+				angles[]={6.2685165,4.4730349,0.06258551};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				description="Disco Dave (California Surfers)";
+			};
+			id=23;
+			type="Land_Campfire_burning";
+			atlOffset=0.00041675568;
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16411.15,5.8472414,11681.528};
+				angles[]={6.2738566,2.1650286,6.2698536};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				health=0.63978338;
+				skill=0.60000002;
+				ammo=0.35174546;
+				lock="UNLOCKED";
+				fuel=0.025584657;
+				description="United States Army Warrant Officer Macky (Pilot)";
+			};
+			id=24;
+			type="rhsusf_m1025_w_m2";
+			atlOffset=-5.2690506e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalMask";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_1',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalDoors";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="uo_unitDescription";
+					expression="_this setVariable ['uo_unitDescription', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item15
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17437.018,13.959871,13169.433};
+						angles[]={0.031991884,4.2625303,0.0026529003};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[this,""cdc4""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+						description="CDC Employee DECON TEAM (Biff) (HQ)";
+						isPlayable=1;
+					};
+					id=26;
+					type="B_Soldier_VR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENGVR";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17430.301,13.734144,13177.474};
+						angles[]={0.025327841,4.2625303,0.0026744273};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[this,""cdc4""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+						description="CDC Employee DECON TEAM (Wally) (HQ)";
+						isPlayable=1;
+					};
+					id=27;
+					type="B_Soldier_VR_F";
+					atlOffset=-1.9073486e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENGVR";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17444.807,14.025987,13164.627};
+						angles[]={0.012000273,4.2625303,0.0026520467};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[this,""cdc4""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+						description="CDC Employee DECON TEAM (Muhammed) (HQ)";
+						isPlayable=1;
+					};
+					id=28;
+					type="B_Soldier_VR_F";
+					atlOffset=-9.5367432e-007;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENGVR";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17442.451,13.712449,13183.248};
+						angles[]={0.0080009829,4.2625303,0.0013372133};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[this,""cdc4""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+						description="CDC Employee DECON TEAM (Harvey) (HQ) ";
+						isPlayable=1;
+					};
+					id=29;
+					type="B_Soldier_VR_F";
+					atlOffset=1.9073486e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENGVR";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=25;
+		};
+		class Item16
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18180.645,21.766171,15140.792};
+				angles[]={6.107677,2.2312632,0.029326396};
+			};
+			name="location2";
+			id=31;
+			type="Logic";
+		};
+		class Item17
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17413.955,13.89084,13181.219};
+				angles[]={0.015998369,1.1550131,6.2445378};
+			};
+			name="specstart";
+			id=32;
+			type="Logic";
+		};
+		class Item18
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17406.014,14.419368,13171.163};
+				angles[]={0.010664274,3.696084,6.2685208};
+			};
+			name="location3";
+			id=35;
+			type="Logic";
+		};
+		class Item19
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16820.961,22.512909,12713.68};
+				angles[]={0.045302324,3.6960783,6.2725158};
+			};
+			name="location4";
+			id=36;
+			type="Logic";
+		};
+		class Item20
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18181.281,26.379637,15251.811};
+				angles[]={0.017332481,3.6960783,6.2631865};
+			};
+			name="location5";
+			id=37;
+			type="Logic";
+		};
+		class Item21
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18130.32,16.464319,14949.909};
+				angles[]={6.272521,2.2312584,6.2685208};
+			};
+			name="location8";
+			id=38;
+			type="Logic";
+		};
+		class Item22
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18183.383,25.332418,15223.554};
+				angles[]={6.2711902,2.2312584,6.2565274};
+			};
+			name="location9";
+			id=39;
+			type="Logic";
+		};
+		class Item23
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17429.135,15.141439,13122.153};
+						angles[]={0,3.4121363,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[this,""cdc4""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+						name="man1";
+						description="CDC Employee (Joe) (CDC COMPOUND)";
+						isPlayable=1;
+					};
+					id=41;
+					type="B_recon_F";
+					atlOffset=0.5;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17427.926,15.144452,13124.412};
+						angles[]={0,3.4121363,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[this,""cdc4""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+						description="CDC Employee (Steve) (CDC COMPOUND)";
+						isPlayable=1;
+					};
+					id=42;
+					type="B_recon_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17431.346,15.144452,13121.611};
+						angles[]={0,3.4121363,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[this,""cdc4""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+						description="CDC Employee (Filthy) (CDC COMPOUND)";
+						isPlayable=1;
+					};
+					id=43;
+					type="B_recon_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17426.279,15.14444,13126.438};
+						angles[]={0,3.4121363,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[this,""cdc4""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+						name="charlie";
+						description="CDC Employee (Chuck) (CDC COMPOUND)";
+						isPlayable=1;
+					};
+					id=44;
+					type="B_recon_F";
+					atlOffset=0.50300026;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=40;
+			atlOffset=0.5;
+		};
+		class Item24
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8433.2705,80.55162,25257.73};
+				angles[]={0.043970551,3.696084,0.13124155};
+			};
+			name="specpen";
+			id=48;
+			type="Logic";
+		};
+		class Item25
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17455.568,5.9445238,14029.755};
+				angles[]={6.2551923,3.696084,0.019996032};
+			};
+			name="location15";
+			id=50;
+			type="Logic";
+		};
+		class Item26
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={19547.66,33.523495,13369.664};
+				angles[]={0,3.696084,0};
+			};
+			name="location16";
+			id=57;
+			type="Logic";
+		};
+		class Item27
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={19243.064,20.976343,13830.714};
+				angles[]={6.2432079,3.696084,6.2791886};
+			};
+			name="location17";
+			id=63;
+			type="Logic";
+		};
+		class Item28
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17400.32,14.093167,13194.187};
+						angles[]={0.029321531,4.2625303,6.251193};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[this,""cdc4""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+						description="CDC Employee DECON TEAM SCIENTIST (Must stay alive)";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=65;
+					type="B_recon_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17406.479,13.760015,13199.653};
+						angles[]={0.025327841,4.2625303,6.2551923};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[this,""cdc4""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+						description="CDC Employee DECON TEAM (Moggy)";
+						isPlayable=1;
+					};
+					id=66;
+					type="B_recon_F";
+					atlOffset=-9.5367432e-007;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17406.996,13.942099,13191.907};
+						angles[]={0.022662206,4.2625303,6.2511969};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[this,""cdc4""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+						description="CDC Employee DECON TEAM (Buck)";
+						isPlayable=1;
+					};
+					id=67;
+					type="B_recon_F";
+					atlOffset=-9.5367432e-007;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17404.977,13.611352,13207.59};
+						angles[]={0.015998369,4.2625303,6.2591896};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[this,""cdc4""] call gooncorp_fnc_globalgear;this setGroupId [""CDC Team 1 Quarantine, Annex Company, California""];";
+						description="CDC Employee DECON TEAM (Gary)";
+						isPlayable=1;
+					};
+					id=68;
+					type="B_recon_F";
+					atlOffset=9.5367432e-007;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=64;
+		};
+		class Item29
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16966.615,17.840923,12441.758};
+						angles[]={6.1650715,4.5845962,6.2605233};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						description="Gary Gigax";
+						isPlayable=1;
+					};
+					id=74;
+					type="C_man_shorts_1_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=73;
+		};
+		class Item30
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16644.051,12.787869,12722.817};
+						angles[]={6.2778478,4.5845962,0.071875811};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						description="Justin Bieber";
+						isPlayable=1;
+					};
+					id=76;
+					type="C_man_1_3_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=75;
+		};
+		class Item31
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17046.084,2.795881,13477.052};
+						angles[]={0.0066592805,1.4811213,0.013332055};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						description="Logan (California Surfers)";
+						isPlayable=1;
+					};
+					id=79;
+					type="C_man_shorts_2_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17041.283,2.7670176,13474.663};
+						angles[]={0.018663859,1.4811213,0.0013372133};
+					};
+					side="Civilian";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						description="Disco Dave (California Surfers)";
+						isPlayable=1;
+					};
+					id=80;
+					type="C_man_shorts_2_F";
+					atlOffset=2.3841858e-007;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17040.926,2.7106199,13478.646};
+						angles[]={0.011995304,1.4811213,0.013332055};
+					};
+					side="Civilian";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						description="Kelly Slater (California Surfers)";
+						isPlayable=1;
+					};
+					id=81;
+					type="C_man_shorts_2_F";
+					atlOffset=2.3841858e-007;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=78;
+		};
+		class Item32
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16419.113,3.5007925,11681.507};
+						angles[]={6.2711854,1.4375752,6.247201};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						description="United States Army Private Sticks (AKA Bitchboy)";
+						isPlayable=1;
+					};
+					id=83;
+					type="CORX_Black_GR";
+					atlOffset=-7.1525574e-007;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16414.824,3.5299096,11675.937};
+						angles[]={6.272521,1.4375687,6.2698536};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						description="United States Army Warrant Officer Macky (Pilot)";
+						isPlayable=1;
+					};
+					id=84;
+					type="rhsusf_army_ucp_helipilot";
+					atlOffset=-7.1525574e-007;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=82;
+			atlOffset=-7.1525574e-007;
+		};
+		class Item33
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18230.844,16.262966,14649.153};
+				angles[]={6.2791886,2.2312639,6.2551923};
+			};
+			name="location26";
+			id=96;
+			type="Logic";
+		};
+		class Item34
+		{
+			dataType="Trigger";
+			position[]={3595.2871,13.349355,12843.067};
+			class Attributes
+			{
+				onActivation="hint ""We received a transmission from civilian women somewhere in Kavala.  Search the town and find the source. Rescue those women and take them with you..."";_handle = [location101, 120, location99] spawn gooncorp_spawnai_z;sleep 300;_handle = [location101, 120, location99] spawn gooncorp_spawnai_z;sleep 300;_handle = [location101, 120, location99] spawn gooncorp_spawnai_z;sleep 300;_handle = [location101, 120, location99] spawn gooncorp_spawnai_z;sleep 300;";
+				sizeA=511;
+				sizeB=511;
+				interuptable=1;
+				activationBy="WEST";
+				isRectangle=1;
+			};
+			id=104;
+			type="EmptyDetector";
+			atlOffset=0.043000221;
+		};
+		class Item35
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3564.7661,10.867364,12771.987};
+				angles[]={0,3.696084,0};
+			};
+			name="location99";
+			id=105;
+			type="Logic";
+			atlOffset=0.017000198;
+		};
+		class Item36
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4288.748,30.655685,13982.055};
+				angles[]={6.2511969,3.696084,0.055940546};
+			};
+			name="location101";
+			id=106;
+			type="Logic";
+		};
+		class Item37
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16892.291,16.710474,12909.002};
+						angles[]={6.2658563,4.5845962,6.2325621};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="[this,""army_dm""] call gooncorp_fnc_globalgear;";
+						description="Hunter";
+						isPlayable=1;
+					};
+					id=110;
+					type="C_man_shorts_1_F";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=109;
+			atlOffset=3.8146973e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item38
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2664.2061,12.084146,9936.3428};
+				angles[]={6.251193,3.6960838,0.055937801};
+			};
+			name="spex";
+			id=139;
+			type="Logic";
+			atlOffset=0.012998581;
+		};
+		class Item39
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={19243.316,32.128605,13268.998};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=164;
+					type="O_Soldier_F";
+					atlOffset=-0.012420654;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=163;
+			atlOffset=-0.012420654;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item40
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={18742.656,29.728489,16419.215};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=166;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=165;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item41
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={18645.201,24.998917,13480.134};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=168;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=167;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acex_headless_blacklist";
+					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item42
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18174.699,17.603838,14995.291};
+				angles[]={6.2259154,2.2312639,0.065240532};
+			};
+			name="location30";
+			id=175;
+			type="Logic";
+		};
+		class Item43
+		{
+			dataType="Trigger";
+			position[]={17427.908,14.182423,13165.765};
+			angle=5.5503516;
+			class Attributes
+			{
+				name="trig1";
+				condition="call{this}";
+				onActivation="call{if (player distance trig1 < 300) then {hint ""We have enemies coming through the wire!"";};}";
+				sizeA=90;
+				sizeB=125;
+				repeatable=1;
+				activationBy="EAST";
+				isRectangle=1;
+				effectSound="Alarm";
+			};
+			id=190;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item44
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17431.9,14.64,13121.539};
+				angles[]={0,3.696084,0};
+			};
+			name="light1";
+			id=202;
+			type="Logic";
+		};
+		class Item45
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17443.219,15.549516,13120.672};
+				angles[]={0,0.80482286,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=209;
+			type="Land_CampingTable_F";
+		};
+		class Item46
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17442.725,16.617252,13121.171};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=211;
+			type="ACE_atropineItem";
+			atlOffset=9.5367432e-007;
+		};
+		class Item47
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17442.832,16.617252,13120.994};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=212;
+			type="ACE_adenosineItem";
+			atlOffset=9.5367432e-007;
+		};
+		class Item48
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17443.426,16.617252,13120.513};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=213;
+			type="Item_U_C_Scientist";
+			atlOffset=9.5367432e-007;
+		};
+		class Item49
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17443.463,16.617252,13120.081};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=214;
+			type="Item_U_C_Scientist";
+			atlOffset=9.5367432e-007;
+		};
+		class Item50
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17443.041,16.617252,13120.73};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=215;
+			type="Item_U_O_Wetsuit";
+			atlOffset=9.5367432e-007;
+		};
+		class Item51
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17436.369,16.166744,13113.496};
+				angles[]={0,1.712531,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=217;
+			type="Computer";
+			atlOffset=0.03027916;
+		};
+		class Item52
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17436.99,16.089024,13112.841};
+				angles[]={0,3.8518562,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=218;
+			type="Laptop_EP1";
+			atlOffset=9.5367432e-007;
+		};
+		class Item53
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17436.51,15.549516,13113.269};
+				angles[]={0,0.76238608,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=219;
+			type="Land_CampingTable_F";
+		};
+		class Item54
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17431.521,16.166744,13127.567};
+				angles[]={0,1.7321668,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=220;
+			type="Computer";
+			atlOffset=0.03027916;
+		};
+		class Item55
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17432.131,16.089024,13126.903};
+				angles[]={0,3.871521,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=221;
+			type="Laptop_EP1";
+			atlOffset=9.5367432e-007;
+		};
+		class Item56
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17431.66,15.549516,13127.334};
+				angles[]={0,0.78202188,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=222;
+			type="Land_CampingTable_F";
+		};
+		class Item57
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17428.852,16.166744,13130.337};
+				angles[]={0,1.7325847,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=223;
+			type="Computer";
+			atlOffset=0.03027916;
+		};
+		class Item58
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17429.455,16.089024,13129.671};
+				angles[]={0,3.8719566,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=224;
+			type="Laptop_EP1";
+			atlOffset=9.5367432e-007;
+		};
+		class Item59
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17428.984,15.549516,13130.106};
+				angles[]={0,0.78243947,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=225;
+			type="Land_CampingTable_F";
+		};
+		class Item60
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17422.508,15.649499,13120.114};
+				angles[]={0,2.3013842,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=227;
+			type="Land_CampingChair_V2_F";
+		};
+		class Item61
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17423.332,15.649499,13121.226};
+				angles[]={0,2.3013842,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=228;
+			type="Land_CampingChair_V2_F";
+		};
+		class Item62
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17417.838,15.923512,13123.641};
+				angles[]={0,3.9147725,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=229;
+			type="Land_OfficeCabinet_01_F";
+		};
+		class Item63
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17421.109,16.111897,13123.85};
+				angles[]={0,5.5112019,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=230;
+			type="MapBoard_altis_F";
+			atlOffset=1.9073486e-006;
+		};
+		class Item64
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17441.076,15.549516,13123.994};
+				angles[]={0,0.79671824,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=231;
+			type="Land_CampingTable_F";
+		};
+		class Item65
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17441.275,16.617252,13123.483};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=242;
+			type="Item_rhs_beanie_green";
+			atlOffset=9.5367432e-007;
+		};
+		class Item66
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17441.238,15.818063,13123.587};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=243;
+			type="Headgear_H_Beret_blk";
+		};
+		class Item67
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17400.699,16.533098,13154.609};
+				angles[]={6.2827492,0.84372705,6.2756805};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				fuel=0.042528085;
+				init="call{_handle = [this] spawn {sleep 15; _this select 0  setObjectTextureGlobal [0, ""#(rgb,8,8,3)color(0,0,0,1)""]; };}";
+				name="trc";
+			};
+			id=285;
+			type="B_Truck_01_mover_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="uo_unitDescription";
+					expression="_this setVariable ['uo_unitDescription', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit"",""hgun_P07_F""],[2,2]],[[""16Rnd_9x21_Mag""],[16]],[[""UK3CB_BAF_V_Osprey_Winter"",""ACRE_PRC117F"",""ACRE_PRC148"",""rhsusf_acc_wmx""],[5,3,3,7]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item68
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16963.66,17.349669,12819.99};
+				angles[]={0.0039967569,3.696084,6.2685208};
+			};
+			name="location12";
+			id=49;
+			type="Logic";
+		};
+		class Item69
+		{
+			dataType="Marker";
+			position[]={17644.881,8.4685059,13355.966};
+			name="f_1";
+			type="mil_arrow";
+			colorName="ColorRed";
+			angle=47.119999;
+			id=290;
+			atlOffset=-3.4218292;
+		};
+		class Item70
+		{
+			dataType="Trigger";
+			position[]={17393.873,14.683638,13158.384};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{_handle = [this] spawn {hint ""No one is around.  Where are they?  We heard an alarm go off last night we just keep on sleeping."";deletevehicle (_this select 0)};}";
+				sizeA=15;
+				sizeB=15;
+				interuptable=1;
+				activationBy="WEST";
+				isRectangle=1;
+				effectTitle="RscInterlacing";
+			};
+			id=291;
+			type="EmptyDetector";
+		};
+		class Item71
+		{
+			dataType="Trigger";
+			position[]={17399.012,13.216682,13238.143};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{_handle = [this] spawn {hint ""The lab looks like it is still functional."";deletevehicle (_this select 0)};}";
+				sizeA=15;
+				sizeB=15;
+				interuptable=1;
+				activationBy="WEST";
+				isRectangle=1;
+				effectMusic="BackgroundTrack01a_F";
+				effectTitle="SplashESRB";
+			};
+			id=292;
+			type="EmptyDetector";
+		};
+		class Item72
+		{
+			dataType="Trigger";
+			position[]={17512.031,13.377822,13206.766};
+			angle=3.9543924;
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{_handle = [this] spawn {hint ""Lets go check out Pyrgos.  Maybe our team went there."";};}";
+				sizeA=15;
+				sizeB=15;
+				interuptable=1;
+				activationBy="WEST";
+				isRectangle=1;
+			};
+			id=293;
+			type="EmptyDetector";
+		};
+		class Item73
+		{
+			dataType="Marker";
+			position[]={17217.471,14.637695,12897.56};
+			name="f_2";
+			type="mil_arrow";
+			colorName="ColorRed";
+			angle=228.86266;
+			id=308;
+			atlOffset=-1.9045792;
+		};
+		class Item74
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17414.793,14.64,13131.636};
+				angles[]={0,3.696084,0};
+			};
+			name="light3";
+			id=315;
+			type="Logic";
+		};
+		class Item75
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17399.91,13.152538,13242.484};
+				angles[]={0,3.696084,0};
+			};
+			name="light4";
+			id=316;
+			type="Logic";
+			atlOffset=-0.0079994202;
+		};
+		class Item76
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17411.941,17.484331,13129.563};
+				angles[]={0,5.5685039,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=317;
+			type="Land_AirconCondenser_01_F";
+			atlOffset=1.917635;
+		};
+		class Item77
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17409.885,15.661499,13132.766};
+				angles[]={0,5.5314813,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=318;
+			type="Fridge_01_open_F";
+		};
+		class Item78
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17411.205,15.800846,13131.126};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=319;
+			type="plp_ctm_SafetyBarrelRed";
+		};
+		class Item79
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17408.059,15.297834,13132.591};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=320;
+			type="plp_ctm_SafetyBarrelRed";
+			atlOffset=9.5367432e-007;
+		};
+		class Item80
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17412.035,15.800846,13130.241};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=321;
+			type="plp_ctm_SafetyBarrelRed";
+		};
+		class Item81
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17414.365,15.586552,13132.256};
+				angles[]={0,0.77811986,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=322;
+			type="Land_TablePlastic_01_F";
+		};
+		class Item82
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17414.482,16.193153,13132.14};
+				angles[]={0,2.3410568,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=323;
+			type="Body";
+		};
+		class Item83
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17415.418,15.586552,13133.362};
+				angles[]={0,0.77811986,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=326;
+			type="Land_TablePlastic_01_F";
+		};
+		class Item84
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17415.535,16.193153,13133.246};
+				angles[]={0,2.3410568,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=327;
+			type="Body";
+		};
+		class Item85
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17413.59,16.031441,13135.708};
+						angles[]={0,0.88229883,0};
+					};
+					side="Civilian";
+					flags=3;
+					class Attributes
+					{
+						health=0.10606581;
+						init="call{this setbehaviour ""stealth"";}";
+						name="zebber";
+						stance="Down";
+					};
+					id=329;
+					type="C_man_shorts_2_F";
+					atlOffset=0.88698959;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="uo_unitDescription";
+							expression="_this setVariable ['uo_unitDescription', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=328;
+			atlOffset=0.88698959;
+		};
+		class Item86
+		{
+			dataType="Trigger";
+			position[]={17412.238,14.64,13133.299};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{_id = [zebber, man1] execFSM ""handmele.fsm"";}";
+				sizeA=2;
+				sizeB=2;
+				timeout[]={4,4,4};
+				activationBy="WEST";
+			};
+			id=330;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item87
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17413.445,15.586552,13135.686};
+				angles[]={0,5.4981241,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=333;
+			type="Land_TablePlastic_01_F";
+		};
+		class Item88
+		{
+			dataType="Marker";
+			position[]={17181.373,15.443848,12942.313};
+			name="f_3";
+			type="mil_arrow";
+			colorName="ColorRed";
+			angle=228.86264;
+			id=336;
+			atlOffset=-1.4332981;
+		};
+		class Item89
+		{
+			dataType="Marker";
+			position[]={17207.787,15.65954,12923.835};
+			name="f_4";
+			type="mil_arrow";
+			colorName="ColorRed";
+			angle=228.86263;
+			id=337;
+			atlOffset=-1.4232998;
+		};
+		class Item90
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16710.645,19.851147,12706.285};
+				angles[]={0.09966857,3.6960838,6.2671871};
+			};
+			name="locationPYRGOS";
+			id=338;
+			type="Logic";
+		};
+		class Item91
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17947.482,32.9114,15289.451};
+				angles[]={6.1310368,2.2312639,0.077180728};
+			};
+			name="locationCHARKIA";
+			id=339;
+			type="Logic";
+		};
+		class Item92
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17404.658,16.766306,13242.763};
+				angles[]={6.2824078,2.5310636,0.0011290604};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=341;
+			type="Fridge_01_closed_F";
+			atlOffset=6.2942505e-005;
+		};
+		class Item93
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17402.525,16.694304,13243.438};
+				angles[]={0.0010812217,4.0462837,0.00085349265};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=342;
+			type="Land_TablePlastic_01_F";
+			atlOffset=5.3405762e-005;
+		};
+		class Item94
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17401.758,17.324375,13244.031};
+				angles[]={6.2825708,4.9084315,0.0012360566};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=344;
+			type="Notebook";
+			atlOffset=0.88469696;
+		};
+		class Item95
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17402.18,17.137817,13243.188};
+				angles[]={0.0013302123,0.93266213,6.2828169};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=345;
+			type="CUP_radio_b";
+		};
+		class Item96
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17404.271,17.095968,13244.352};
+				angles[]={0,5.6837344,6.2818065};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{this addaction [""Load Tissue Sample"", ""loadtissue.gooncorp.sqf""];}";
+				name="barrel2";
+			};
+			id=348;
+			type="Land_DieselGroundPowerUnit_01_F";
+			atlOffset=2.5245342;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="uo_unitDescription";
+					expression="_this setVariable ['uo_unitDescription', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item97
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18188.15,20.654779,15039.854};
+				angles[]={6.2605233,3.1717479,6.2219291};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				health=0.91347349;
+				skill=0.60000002;
+				fuel=0.63950753;
+				description="Disco Dave (California Surfers)";
+			};
+			id=373;
+			type="C_Van_01_transport_F";
+			atlOffset=-0.0042858124;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="uo_unitDescription";
+					expression="_this setVariable ['uo_unitDescription', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item98
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={19399.143,40.449326,13259.815};
+				angles[]={0.035984326,5.7746978,0.012000273};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				health=0.91347349;
+				skill=0.60000002;
+				fuel=0.63950753;
+				description="Disco Dave (California Surfers)";
+			};
+			id=374;
+			type="C_Van_01_transport_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="uo_unitDescription";
+					expression="_this setVariable ['uo_unitDescription', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item99
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17402.158,17.196402,13243.639};
+				angles[]={0.0010918301,0,0.00084572798};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				aiRadarUsage=784966542;
+			};
+			id=380;
+			type="Land_BakedBeans_F";
+		};
+		class Item100
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17401.908,17.177221,13243.55};
+				angles[]={0.0010918301,0,0.00084572798};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=381;
+			type="Land_Can_V1_F";
+		};
+		class Item101
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17402.406,17.138365,13242.86};
+				angles[]={0.0010918301,0,0.00084572798};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=382;
+			type="Intel_Photos_F";
+		};
+		class Item102
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17410.838,14.164464,13238.68};
+				angles[]={0.014664836,0,6.2751918};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=384;
+			type="Land_EngineCrane_01_F";
+			atlOffset=-4.9591064e-005;
+		};
+		class Item103
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17410.895,14.239863,13236.69};
+				angles[]={0.0093286335,0,6.2751846};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				aiRadarUsage=15762;
+			};
+			id=385;
+			type="WaterPump_01_sand_F";
+			atlOffset=-4.4822693e-005;
+		};
+		class Item104
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17391.049,16.294796,13165.197};
+				angles[]={0.0093200579,0.84372705,6.2738476};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				fuel=0.042528085;
+				init="call{this addaction [""attach"", ""if (player distance trc < 7) then {trc2 attachto [trc, [0,-5.4,-.2]]};;""];this addaction [""detach"", ""detach trc2""];}";
+				name="trc2";
+			};
+			id=411;
+			type="B_Quadbike_01_F";
+			atlOffset=-9.5367432e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="uo_unitDescription";
+					expression="_this setVariable ['uo_unitDescription', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit"",""hgun_P07_F""],[2,2]],[[""16Rnd_9x21_Mag""],[16]],[[""ACRE_PRC117F"",""ACRE_PRC148"",""rhsusf_acc_wmx"",""UK3CB_BAF_G_Balaclava_Win"",""ItemCompass"",""ItemMap""],[3,3,7,3,4,4]],[[""UK3CB_BAF_B_Bergen_Arctic_JTAC_H_A"",""UK3CB_BAF_B_Bergen_Arctic_JTAC_A""],[3,2]]],false]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item105
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17394.916,14.652754,13159.567};
+				angles[]={0.0053265258,0,6.2698536};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=415;
+			type="UK3CB_BAF_B_Bergen_Arctic_JTAC_H_A";
+			atlOffset=-0.010654449;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="uo_unitDescription";
+					expression="_this setVariable ['uo_unitDescription', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item106
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17394.83,14.647903,13160.348};
+				angles[]={0.0079935296,0,6.2671871};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=416;
+			type="UK3CB_BAF_B_Bergen_Arctic_JTAC_H_A";
+			atlOffset=-0.012013435;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="uo_unitDescription";
+					expression="_this setVariable ['uo_unitDescription', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item107
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17527.133,13.164333,13257.356};
+				angles[]={0.010663962,0,0.010663962};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this = ""MediumDestructionFire"" createVehicle position this;}";
+			};
+			id=425;
+			type="Land_jbad_rubble_concrete_02";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="uo_unitDescription";
+					expression="_this setVariable ['uo_unitDescription', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item108
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16806.93,22.651909,12718.604};
+				angles[]={0.057270125,0,0.014664836};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this = ""test_EmptyObjectForFireBig"" createVehicle position this;}";
+			};
+			id=426;
+			type="Land_jbad_rubble_concrete_02";
+			atlOffset=-0.0003452301;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="uo_unitDescription";
+					expression="_this setVariable ['uo_unitDescription', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item109
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={19400.9,39.167,13250.335};
+				angles[]={6.2818484,0,0.022662206};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this = ""test_EmptyObjectForFireBig"" createVehicle position this;}";
+			};
+			id=427;
+			type="Land_jbad_rubble_concrete_02";
+			atlOffset=0.006023407;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="uo_unitDescription";
+					expression="_this setVariable ['uo_unitDescription', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item110
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18193.168,20.608139,15101.41};
+				angles[]={6.2485328,0,0.0039967569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this = ""test_EmptyObjectForFireBig"" createVehicle position this;}";
+			};
+			id=428;
+			type="Land_jbad_rubble_concrete_02";
+			atlOffset=0.0096683502;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="uo_unitDescription";
+					expression="_this setVariable ['uo_unitDescription', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item111
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17390.281,16.258469,13151.993};
+				angles[]={0.0066671576,0,6.2645278};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this attachto [trc, [0,-3.9,.9]];_handle = [this] spawn {sleep 15; _this select 0  setObjectTextureGlobal [0, ""#(rgb,8,8,3)color(0,0,0,1)""]; };}";
+			};
+			id=432;
+			type="Land_Pod_Heli_Transport_04_covered_F";
+			atlOffset=9.5367432e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="uo_unitDescription";
+					expression="_this setVariable ['uo_unitDescription', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item112
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17424.617,15.817431,13135.341};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=433;
+			type="Land_OfficeChair_01_F";
+		};
+		class Item113
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17426.613,16.111895,13137.179};
+				angles[]={0,2.2350807,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=434;
+			type="MapBoard_seismic_F";
+		};
+		class Item114
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17427.592,15.450464,13135.722};
+				angles[]={1.4935228,1.5147128,0.81153613};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=436;
+			type="Land_CampingChair_V1_folded_F";
+			atlOffset=0.23890781;
+		};
+	};
+};
+class OutroLoose
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};

@@ -1,0 +1,391 @@
+author = "Gooncorp";
+OnLoadName = "Center For Disease Control";
+loadScreen = "pics\VIETNAM1.jpg";
+onLoadMission = "Year 2048";
+OnLoadMissionTime = FALSE;
+onLoadIntro = "The Fall of the Human Race...";
+
+
+respawn = "BASE";
+respawndelay = 3;
+disabledAi = 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+//End condition debriefs
+class CfgDebriefing
+{
+	class end1 //Objectives met
+	{
+		title = "Mission Completed";
+		subtitle = "You have escaped with your life!";
+		description = "Now your government will have to research the disease and finally get rid of it for good!";
+		pictureBackground = "pics\end2.jpg";
+		picture = "";
+		pictureColor[] = {};
+	};
+
+	class end2 //Objectives met
+	{
+		title = "Mission Completed";
+		subtitle = "You have killed all the enemies thereby completing the mission!";
+		description = "Your team destroyed all enemies and halted the disease in the region!";
+		pictureBackground = "pics\end2.jpg";
+		picture = "";
+		pictureColor[] = {};
+	};
+
+	class epicFail //Casualty limit
+	{
+		title = "Mission Failed";
+		subtitle = "Your team has been destroyed";
+		description = "You did not survive this apocalypse...";
+		pictureBackground = "pics\end2.jpg";
+		picture = "";
+		pictureColor[] = {};
+	};
+	
+
+};
+
+
+
+
+
+
+
+class CfgFunctions 
+{
+	class gooncorp 
+	{
+		class gearscript //Gear script function for units and vehicles
+		{
+			class globalgear { file = "framework\unitgear.sqf"; };
+		};
+	};
+};
+
+
+
+
+
+
+
+
+class Header {
+  gameType = Coop;            //DM, Team, Coop, CTI
+  minPlayers = 2;             //min # of players the mission supports
+  maxPlayers =16;            //Max # of players the mission supports
+  playerCountMultipleOf = 1;  //Unknown
+};
+
+class Extended_PreInit_EventHandlers {
+    class Mission {
+   preinit = "call compile preprocessFileLineNumbers 'preinit.sqf'";
+    };
+};
+
+
+
+
+class Params {
+      
+      
+  class scorescreen {// select 0
+    title = "Score Screen";
+    values[] = {0,1};
+    texts[] = {"Off - Scores Offend Me","On - I want to know..."};
+    default = 1;
+  };
+  
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class CfgIdentities
+{
+      
+  class viet1
+  {
+   name="Phu Tran";
+   face="AsianHead_A3_01";
+   glasses="None";
+   speaker="Male01EN";
+   pitch=1.1;
+  };
+
+  class viet2
+  {
+   name="Dien Bou";
+   face="AsianHead_A3_02";
+   glasses="None";
+   speaker="Male01EN";
+   pitch=1.1;
+  };
+
+  class viet3
+  {
+   name="Duc Ngyuen";
+   face="AsianHead_A3_03";
+   glasses="None";
+   speaker="Male01EN";
+   pitch=1.1;
+  };
+
+
+  class viet4
+  {
+   name="Nan Tran";
+   face="AsianHead_A3_02";
+   glasses="None";
+   speaker="Male01EN";
+   pitch=1.1;
+  };
+
+  class viet5
+  {
+   name="Vin Phu";
+   face="AsianHead_A3_03";
+   glasses="None";
+   speaker="Male01EN";
+   pitch=1.1;
+  };
+
+  class afri1
+  {
+   name="Mobatu Sadot";
+   face="AfricanHead_01";
+   glasses="None";
+   speaker="Male01EN";
+   pitch=1.1;
+  };
+
+  class afri2
+  {
+   name="Benu Fara";
+   face="AfricanHead_02";
+   glasses="None";
+   speaker="Male01EN";
+   pitch=1.1;
+  };
+
+  class afri3
+  {
+   name="Zulo Aidid";
+   face="AfricanHead_02";
+   glasses="None";
+   speaker="Male01EN";
+   pitch=1.1;
+  };
+
+
+
+
+
+
+
+
+
+
+};
+  
+class CfgSounds
+{
+	sounds[] = 
+	{
+		tissuesample, switch1, z_ambiencezombies8,z_ambiencezombies9,z_ambiencezombies1,z_ambiencezombies2,z_ambiencezombies3,z_ambiencezombies4,z_ambiencezombies5,z_grunt1,z_grunt3,z_closebattle,z_guts1,z_loud1,z_shriek1,
+z_stumble1,z_wack1,z_wack2
+	};
+
+
+
+
+
+	class switch1
+	{
+		name="switch1";
+		sound[]={"sound\switch1.ogg",db+4,1};
+		titles[]={};
+	};
+	class tissuesample
+	{
+		name="tissuesample";
+		sound[]={"sound\tissuesample.ogg",db+5,1};
+		titles[]={};
+	};
+
+
+
+
+
+
+
+
+
+
+
+	class z_ambiencezombies1
+	{
+		name="z_ambiencezombies1";
+		sound[]={"sound\ambiencezombies1.ogg",db-4,1};
+		titles[]={};
+	};
+	class z_ambiencezombies2
+	{
+		name="z_ambiencezombies2";
+		sound[]={"sound\ambiencezombies2.ogg",db-4,1};
+		titles[]={};
+	};
+	class z_ambiencezombies3
+	{
+		name="z_ambiencezombies3";
+		sound[]={"sound\ambiencezombies3.ogg",db-4,1};
+		titles[]={};
+	};
+	class z_ambiencezombies4
+	{
+		name="z_ambiencezombies4";
+		sound[]={"sound\ambiencezombies4.ogg",db-4,1};
+		titles[]={};
+	};
+	class z_ambiencezombies5
+	{
+		name="z_ambiencezombies5";
+		sound[]={"sound\ambiencezombies5.ogg",db-4,1};
+		titles[]={};
+	};
+
+	class z_ambiencezombies6
+	{
+		name="z_ambiencezombies6";
+		sound[]={"sound\ambiencezombies6.ogg",db-4,1};
+		titles[]={};
+	};
+
+	class z_ambiencezombies7
+	{
+		name="z_ambiencezombies7";
+		sound[]={"sound\ambiencezombies7.ogg",db-9,1};
+		titles[]={};
+	};
+
+
+	class z_ambiencezombies8
+	{
+		name="z_ambiencezombies8";
+		sound[]={"sound\ambiencezombies8.ogg",db-9,1};
+		titles[]={};
+	};
+
+
+	class z_ambiencezombies9
+	{
+		name="z_ambiencezombies9";
+		sound[]={"sound\ambiencezombies9.ogg",db-9,1};
+		titles[]={};
+	};
+
+
+	class z_grunt1
+	{
+		name="z_grunt1";
+		sound[]={"sound\grunt1.ogg",db+3,1};
+		titles[]={};
+	};
+
+	class z_grunt3
+	{
+		name="z_grunt3";
+		sound[]={"sound\grunt3.ogg",db+2,1};
+		titles[]={};
+	};
+	class z_closebattle
+	{
+		name="z_closebattle";
+		sound[]={"sound\closebattle.ogg",db+1,1};
+		titles[]={};
+	};
+	class z_guts1
+	{
+		name="z_guts1";
+		sound[]={"sound\guts1.ogg",db+2,1};
+		titles[]={};
+	};
+	class z_loud1
+	{
+		name="z_loud1";
+		sound[]={"sound\loud1.ogg",db+5,1};
+		titles[]={};
+	};
+	class z_shriek1
+	{
+		name="z_shriek1";
+		sound[]={"sound\shriek1.ogg",db+5,1};
+		titles[]={};
+	};
+
+	class z_stumble1
+	{
+		name="z_stumble1";
+		sound[]={"sound\stumble1.ogg",db+5,1};
+		titles[]={};
+	};
+
+	class z_wack1
+	{
+		name="z_wack1";
+		sound[]={"sound\wack1.ogg",db+25,.9};
+		titles[]={};
+	};
+	class z_wack2
+	{
+		name="z_wack2";
+		sound[]={"sound\wack2.ogg",db+25,1};
+		titles[]={};
+	};
+		class introsong
+	{
+		name="introsong";
+		sound[]={"sound\introsong.ogg",db+1.7,.8};
+		titles[]={};
+	};
+
+	
+};
+
+  
